@@ -1,6 +1,6 @@
 <template>
   <div id="vuex">
-    {{$store.state.msg}}
+    {{$store.getters.get_message}}
     <b-button @click="$store.commit('reset_msg', 'Message changed in store')">Reset Message</b-button>
   </div>
 </template>

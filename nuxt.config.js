@@ -13,18 +13,21 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'}
+      { rel: 'stylesheet', type: 'text/css', href: 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'},
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/page_structure.css'
+    '@/assets/style.css',
+    '@/assets/transition.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/bootstrap.js'
+    '@/plugins/bootstrap.js',
+    '@/plugins/iview.js',
+    '@/plugins/animate.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -40,5 +43,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  router: {
+    // linkExactActiveClass: 'active'
   }
 }

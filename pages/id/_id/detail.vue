@@ -1,0 +1,37 @@
+<template>
+  <div style="padding: 15px">
+    <b-card
+      border-variant="success"
+      footer-bg-variant="success"
+      text-variant="success"
+    >
+      <p>
+        <i class="fas fa-file-code"></i>
+        <span>pages/id/_id/detail</span>
+      </p>
+      <b-alert show variant="success">
+        <h3>Detail Page</h3>
+        <i class="fas fa-id-card-alt"></i>
+        <b>ID: </b>
+        <b>{{$route.params.id}}</b>
+        <hr>
+        <nuxt-link :to="{name: 'id-id', params: {id: $route.params.id}}">
+          ID Page
+        </nuxt-link>
+      </b-alert>
+      <div slot="footer">
+        <span style="color: white">Dynameic Route</span>
+      </div>
+    </b-card>
+  </div>
+</template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: "Id First",
+    };
+  },
+};
+</script>
