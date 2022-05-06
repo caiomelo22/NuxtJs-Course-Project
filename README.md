@@ -1,4 +1,7 @@
-# nuxt_st
+# NuxtJs-Course-Project
+
+## Course
+Project developed through the following Udemy course: https://www.udemy.com/course/complete-nuxtjs-course/
 
 ## Build Setup
 
