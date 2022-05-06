@@ -1,19 +1,10 @@
-import vuex from 'vuex'
+export const state = () => ({
+  msg: 'Message in store'
+})
 
-const store = {
-  state: {
-    msg: 'Message in store'
-  },
-  getters: {},
-  mutations: {
-    reset_msg(state, arg)
-    {
-      state.msg = arg;
-    }
-  },
-  actions: {}
-}
-
-export default function() {
-  return new vuex.Store(store)
+export const mutations = {
+  reset_msg(state, arg)
+  {
+    state.msg = arg;
+  }
 }
