@@ -4,6 +4,7 @@
 
 <script>
 export default {
+  middleware: 'mw_cookie',
   transition: {
     duration: 1000,
     enterActiveClass: 'animate__animated animate__slideInUp',

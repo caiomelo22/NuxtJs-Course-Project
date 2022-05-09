@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  middleware: 'mw_vuex',
+  // middleware: 'mw_vuex',
   head() {
     return {
       title: "Vuex",
