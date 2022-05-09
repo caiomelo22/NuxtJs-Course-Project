@@ -47,5 +47,6 @@ export default {
 
   router: {
     // linkExactActiveClass: 'active'
+    // middleware: ['mw1', 'mw2']
   }
 }

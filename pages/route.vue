@@ -25,6 +25,7 @@
 
 <script>
 export default {
+  // middleware: 'mw1',
   head() {
     return {
       title: "Route",

@@ -25,18 +25,19 @@
 
 <script>
 export default {
-  validate({ params, query, store }) {
-    let result = /^\d+$/.test(params.id);
-    if (result) {
-      if (params.id > 0 && params.id < 100) {
-        return true;
-      } else {
-        throw new Error("Id must be between 1 and 99");
-      }
-    } else {
-      throw new Error("Id must be a number");
-    }
-  },
+  middleware: 'mw_check',
+  // validate({ params, query, store }) {
+  //   let result = /^\d+$/.test(params.id);
+  //   if (result) {
+  //     if (params.id > 0 && params.id < 100) {
+  //       return true;
+  //     } else {
+  //       throw new Error("Id must be between 1 and 99");
+  //     }
+  //   } else {
+  //     throw new Error("Id must be a number");
+  //   }
+  // },
   head() {
     return {
       title: "Id as Param",
